@@ -7,8 +7,6 @@ Sistema Java Web
 * HTML
 * CSS
 * SQL
-ALTER TABLE ONLY public.turma_aluno
-    ADD CONSTRAINT turma_aluno_pkey PRIMARY KEY (turma_id, aluno_id);
 * JDK E JRE 8
 * PostgreSQL 12
 * Payara Server 4.1.2.173
