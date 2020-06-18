@@ -27,7 +27,7 @@ CREATE TABLE aluno (
 Tabela Professor
 ```
 CREATE TABLE professor (
-    id integer NOT NULL  primary key,
+    id serial NOT NULL  primary key,
     nome character varying,
     titulacao character varying
 );
@@ -36,7 +36,7 @@ CREATE TABLE professor (
 Tabela Turma
 ```
 CREATE TABLE turma (
-    id character varying NOT NULL  primary key,
+    id serial NOT NULL  primary key,
     sala character varying,
     "dataAbertura" date,
     "dataEncerramento" date,
