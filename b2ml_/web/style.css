@@ -1,0 +1,177 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #ececec;
+    font-family: 'Nunito', sans-serif;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+a,
+a:visited,
+a:hover {
+    color: inherit;
+    text-decoration: none;
+}
+
+.hide {
+    display: none;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1024px;
+    width: 100%;
+}
+
+.container-small {
+    margin: 0 auto;
+    max-width: 480px;
+    width: 100%;
+}
+
+
+/* CABEÇALHO */
+
+header {
+    background: #FFF;
+    box-shadow: 0 0 7px 2px #000000;
+}
+
+header div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+header a {
+    height: 45px;
+    align-self: center;
+}
+
+header img {
+    height: 100%;
+}
+
+header ul {
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    margin: 0;
+    height: 80px;
+    font-size: 14px;
+}
+
+header ul li {
+    list-style-type: none;
+    cursor: pointer;
+}
+
+header ul li ul {
+    display: none;
+    position: absolute;
+    padding-top: 30px;
+}
+
+header ul li:hover>ul {
+    display: block;
+}
+
+header ul li ul li {
+    background-color: #FFF;
+    box-shadow: 0 0 7px 2px #000000;
+    padding: 10px;
+}
+
+header ul li ul li a {
+    margin: 5px;
+}
+
+header ul li ul li:hover {
+    background-color: #C0C0C0;
+}
+
+
+/* CORPO */
+
+.content {
+    display: flex;
+    align-items: stretch;
+    height: 100%;
+}
+
+.section-index {
+    display: flex;
+    flex: 1;
+    background-color: #FFFFFFF0;
+    color: #505050;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+/* FORMULARIO */
+
+form {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    font-weight: 600;
+}
+
+form h2 {
+    margin-bottom: 50px;
+}
+
+form .alert {
+    min-height: 45px;
+    border-radius: 5px;
+    background: #28a745;
+    color: #FFF;
+    padding: 15px;
+}
+
+form .error {
+    min-height: 45px;
+    border-radius: 5px;
+    background: #f44336;
+    color: #FFF;
+    padding: 15px;
+}
+
+form input {
+    min-height: 50px;
+    padding: 10px;
+    border: 2px solid #c0c0c0;
+    border-radius: 5px;
+}
+
+form label {
+    margin: 30px 0px 5px 0px;
+}
+
+form button {
+    margin-top: 30px;
+    padding: 15px;
+    background-color: #28a745;
+    color: #FFF;
+    font-size: 20px;
+    border: 0px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+@media (max-width: 800px) {
+    body {
+        height: auto;
+    }
+}
