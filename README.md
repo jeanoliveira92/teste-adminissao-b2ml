@@ -7,8 +7,6 @@ Sistema Java Web
 * HTML
 * CSS
 * SQL
-ALTER TABLE ONLY public.turma_aluno
-    ADD CONSTRAINT turma_aluno_pkey PRIMARY KEY (turma_id, aluno_id);
 * JDK E JRE 8
 * PostgreSQL 12
 * Payara Server 4.1.2.173
@@ -27,7 +25,7 @@ CREATE TABLE aluno (
 Tabela Professor
 ```
 CREATE TABLE professor (
-    id integer NOT NULL  primary key,
+    id serial NOT NULL  primary key,
     nome character varying,
     titulacao character varying
 );
@@ -36,7 +34,7 @@ CREATE TABLE professor (
 Tabela Turma
 ```
 CREATE TABLE turma (
-    id character varying NOT NULL  primary key,
+    id serial NOT NULL  primary key,
     sala character varying,
     "dataAbertura" date,
     "dataEncerramento" date,
